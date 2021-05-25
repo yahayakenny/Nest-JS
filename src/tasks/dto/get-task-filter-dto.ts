@@ -1,6 +1,6 @@
-import { TaskStatus } from "../tasks.model";
+import { TaskStatusValidationPipe } from "../pipes/task-status-validation.pipe";
 
 export class GetTaskFilterDto {
-    status: TaskStatus;
+    status: TaskStatusValidationPipe;
     searchTerm: string;
 }
